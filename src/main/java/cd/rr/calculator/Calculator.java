@@ -99,27 +99,7 @@ public class Calculator {
 
 
 
-//    switch(op){
-//        case "+" :
-//            result = num1 + num2;
-//            System.out.println("Your result: " + result);
-//            break;
-//        case "-" :
-//            result = num1 - num2;
-//            System.out.println("Your result: " + result);
-//            break;
-//        case "*" :
-//            result = num1 * num2;
-//            System.out.println("Your result: " + result);
-//            break;
-//        case "/" :
-//            result = num1 / num2;
-//            System.out.println("Your result: " + result);
-//            break;
-//        default:
-//            System.out.println("Exit!");
-//            break;
-//    }
+
 
 
 
