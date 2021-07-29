@@ -4,39 +4,41 @@ public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
 
-        int firstNumber, secondNumber;
-        public static void addition(int firstNumber, int secondNumber){
-            System.out.println(firstNumber + secondNumber);
+        int num1;
+        int num2;
+
+        public static void addition(num1, num2){
+            System.out.println(num1 + num2);
         }
 
-        public static void subtraction(int firstNumber, int secondNumber){
-            System.out.println(firstNumber - secondNumber);
+        public static void subtraction(num1, num2){
+            System.out.println(num1 - num2);
         }
 
-        public static void multiplication(int firstNumber, int secondNumber){
-            System.out.println(firstNumber * secondNumber);
+        public static void multiplication(num1, num2){
+            System.out.println(num1 * num2);
         }
 
-        public static void division(int firstNumber, int secondNumber){
-            System.out.println(String.format("%2.f", firstNumber / secondNumber));
+        public static void division(num1, num2){
+            System.out.println(String.format("%2.f", num1 / num2));
         }
 
 
     switch(op){
         case "+" :
-            result =  +  ;
+            result = num1 + num2;
             System.out.println("Your result: " + result);
             break;
         case "-" :
-            result =  -  ;
+            result = num1 - num2;
             System.out.println("Your result: " + result);
             break;
         case "*" :
-            result =  *  ;
+            result = num1 * num2;
             System.out.println("Your result: " + result);
             break;
         case "/" :
-            result =  /  ;
+            result = num1 / num2;
             System.out.println("Your result: " + result);
             break;
         default:
@@ -44,10 +46,9 @@ public class Calculator {
             break;
     }
 
-//    if(userinput == "/" && num1 == 0 || num2 == 0){
-//        System.out.println("Error");
-//    }
-//        System.out.println(String.format("%.2f" ,divide));
+    if(userinput == 4 && num1 == 0 || num2 == 0){
+        System.out.println("Error");
+    }
 
     }
 }
