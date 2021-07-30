@@ -20,19 +20,19 @@ public class Calculator {
     }
 
     public static void addition(int num1, int num2){
-        System.out.println(num1 + num2);
+        System.out.println("Result: " + (num1 + num2));
     }
 
     public static void subtraction(int num1, int num2){
-        System.out.println(num1 - num2);
+        System.out.println("Result: " + (num1 - num2));
     }
 
     public static void multiplication(int num1, int num2){
-        System.out.println(num1 * num2);
+        System.out.println("Result: " + (num1 * num2));
     }
 
     public static void division(int num1, int num2){
-        System.out.println((double)num1 / num2);
+        System.out.println("Result: " + ( (double)num1 / num2) );
     }
     public static void main(String[] args) {
         int inNum1;
@@ -43,8 +43,9 @@ public class Calculator {
         do {
             switch (userInput) {
                 case 1:
-                    System.out.print("Enter two numbers: ");
+                    System.out.print("Enter one number: ");
                     inNum1 = input.nextInt();
+                    System.out.println("Enter another number: ");
                     inNum2 = input.nextInt();
                     Calculator.addition(inNum1, inNum2);
                     Calculator.Menu();
@@ -52,8 +53,9 @@ public class Calculator {
                     break;
 
                 case 2:
-                    System.out.print("Enter two numbers: ");
+                    System.out.print("Enter one number: ");
                     inNum1 = input.nextInt();
+                    System.out.println("Enter another number: ");
                     inNum2 = input.nextInt();
                     Calculator.subtraction(inNum1, inNum2);
                     Calculator.Menu();
@@ -61,8 +63,9 @@ public class Calculator {
                     break;
 
                 case 3:
-                    System.out.print("Enter two numbers: ");
+                    System.out.print("Enter one number: ");
                     inNum1 = input.nextInt();
+                    System.out.println("Enter another number: ");
                     inNum2 = input.nextInt();
                     Calculator.multiplication(inNum1, inNum2);
                     Calculator.Menu();
@@ -70,7 +73,9 @@ public class Calculator {
                     break;
 
                 case 4:
+                    System.out.println("Enter one number: ");
                     inNum1 = input.nextInt();
+                    System.out.println("Enter another number: ");
                     inNum2 = input.nextInt();
                     if(inNum1 == 0 || inNum2 == 0){
                         System.out.println("Error");
