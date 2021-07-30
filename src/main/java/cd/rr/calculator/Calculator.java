@@ -32,7 +32,9 @@ public class Calculator {
     }
 
     public static void division(int num1, int num2){
-        System.out.println("Result: " + ( (double)num1 / num2) );
+        double divisionResult = (double) num1 / num2;
+        double roundDivision = Math.round(divisionResult * 100.0) / 100.0;
+        System.out.println("Result: " + (roundDivision));
     }
     public static void main(String[] args) {
         int inNum1;
@@ -77,8 +79,8 @@ public class Calculator {
                     inNum1 = input.nextInt();
                     System.out.println("Enter another number: ");
                     inNum2 = input.nextInt();
-                    if(inNum1 == 0 || inNum2 == 0){
-                        System.out.println("Error");
+                    if(userInput == 4 && inNum2 == 0){
+                        System.out.println("Error: Cannot divide by 0");
                         Calculator.Menu();
                         userInput = input.nextInt();
                         break;
