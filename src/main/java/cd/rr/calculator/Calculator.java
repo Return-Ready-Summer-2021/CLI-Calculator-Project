@@ -22,14 +22,18 @@ public class Calculator {
             System.out.println("4: Division ");
             System.out.println("5: Exit");
 
+
             //The user can choose an operation to perform
             System.out.println("Choose your operation:  ");
             Scanner scanner = new Scanner(System.in);
             int x = scanner.nextInt();
             double num1 = 0;
             double num2 = 0;
+
             //The user can enter two integers
-            if (x != 5) {
+            if (x >=1  && x <= 4) {
+
+
                 System.out.println("First Number: ");
                 num1 = scanner.nextDouble();
                 System.out.println("Second Number: ");
@@ -38,6 +42,7 @@ public class Calculator {
             //The system performs the chosen operation on the two numbers provided
             //The user can view the result of the calculation
             switch (x) {
+
                 case 1:
                     double add = num1 + num2;
                     System.out.println("Result:   " + (int) add);
@@ -66,6 +71,7 @@ public class Calculator {
                     done = true;
                     System.out.println("Goodbye!");
                     break;
+
 
 //The end of the project
             }
